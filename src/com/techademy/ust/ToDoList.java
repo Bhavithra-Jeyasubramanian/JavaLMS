@@ -22,6 +22,7 @@ public class ToDoList {
 		}
 	}
 	
+	//Remove Task
 	public void removeTask(Task toRemoveTask)
 	{
 		int index=0;
