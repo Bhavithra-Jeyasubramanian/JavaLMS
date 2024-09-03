@@ -13,7 +13,7 @@ public class Task {
 	}
 
 	/**
-	 * @return the task
+	 * @return the tasks
 	 */
 	public String getTask() {
 		return task;
