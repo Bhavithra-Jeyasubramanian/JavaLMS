@@ -9,7 +9,7 @@ public class ToDoList {
 		tasks=new Task[size];
 	}
 	
-	//Adding task to task array
+	//Adding task to tasks array
 	public void addTask(Task task)
 	{
 		if(taskCount<this.tasks.length)
