@@ -9,6 +9,7 @@ public class ToDoList {
 		tasks=new Task[size];
 	}
 	
+	//Adding task to task array
 	public void addTask(Task task)
 	{
 		if(taskCount<this.tasks.length)
@@ -18,22 +19,27 @@ public class ToDoList {
 		}
 		else
 		{
-			System.out.println("Task Cannot be added");
+			System.out.println(task.getTask()+" task cannot be added");
 		}
 	}
 	
-	//Remove Task
+	//Remove Task from task array
 	public void removeTask(Task toRemoveTask)
 	{
 		int index=0;
 		for(int i=0;i<tasks.length;i++)
 		{
-			if(tasks[i].equals(toRemoveTask))
+			if(tasks[i]!=null)
+			{
+			if(tasks[i].getTask().equals(toRemoveTask.getTask()))
 			{
 				tasks[i]=null;
 				index=i;
 				break;
 			}
+			}
+			
+			index=tasks.length;
 			
 		}
 		
@@ -52,6 +58,7 @@ public class ToDoList {
 		}
 	}
 	
+	//Printing task details
 	public void dispalyTask()
 	{
 		for(Task task:tasks)

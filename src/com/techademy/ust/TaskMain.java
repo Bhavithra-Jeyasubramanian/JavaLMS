@@ -6,7 +6,7 @@ public class TaskMain {
 	
 	public static void main(String[] args) {
 		
-		ToDoList list=new ToDoList(5);
+		ToDoList list=new ToDoList(3);
 		
 		Task task1=new Task("Complete module Videos",LocalDate.of(2024, 9, 9));
 		Task task2=new Task("Complete Assignments",LocalDate.of(2024, 9, 20));
@@ -23,6 +23,8 @@ public class TaskMain {
 		list.removeTask(task3);
 		
 		list.dispalyTask();
+		
+		list.removeTask(task3);
 	}
 
 }
