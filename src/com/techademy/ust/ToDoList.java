@@ -23,7 +23,7 @@ public class ToDoList {
 		}
 	}
 	
-	//Remove Task from task array
+	//Remove Task from tasks array
 	public void removeTask(Task toRemoveTask)
 	{
 		int index=0;
