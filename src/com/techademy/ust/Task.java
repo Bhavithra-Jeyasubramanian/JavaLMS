@@ -2,7 +2,7 @@ package com.techademy.ust;
 
 import java.time.LocalDate;
 
-public class Task {
+public class Task implements Comparable<Task> {
 	
 	private String task;
 	private LocalDate dueDate;
@@ -38,6 +38,11 @@ public class Task {
 	 */
 	public void setDueDate(LocalDate dueDate) {
 		this.dueDate = dueDate;
+	}
+
+	@Override
+	public int compareTo(Task o) {
+		return this.dueDate.compareTo(o.dueDate);
 	}
 	
 	
