@@ -8,7 +8,6 @@ import java.util.List;
 public class ToDoList {
 	
 	List<Task> taskList=new ArrayList<Task>() ;
-	
 	//Adding task to tasks array
 	public void addTask(Task task)
 	{

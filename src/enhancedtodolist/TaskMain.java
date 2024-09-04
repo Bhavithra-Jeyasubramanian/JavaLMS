@@ -30,6 +30,5 @@ public static void main(String[] args) {
 		list.dispalyTask();
 		
 		list.removeTask(task3);
-		
 	}
 }
