@@ -1,5 +1,7 @@
 package com.techademy.ust;
 
+import java.util.Arrays;
+
 public class ToDoList {
 	
 	Task[] tasks;
@@ -75,5 +77,11 @@ public class ToDoList {
 		}
 		System.out.println();
 	}
+	
+	public void prioritizeTasks()
+	{
+		Arrays.sort(tasks);
+	}
+
 
 }
