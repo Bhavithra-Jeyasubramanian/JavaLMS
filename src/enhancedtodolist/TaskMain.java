@@ -32,5 +32,4 @@ public static void main(String[] args) {
 		list.removeTask(task3);
 		
 	}
-
 }

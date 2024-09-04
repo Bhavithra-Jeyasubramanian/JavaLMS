@@ -60,5 +60,4 @@ public class ToDoList {
 	{
 		Collections.sort(taskList,Comparator.comparing(Task::getDueDate));
 	}
-
 }
